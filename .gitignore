@@ -23,4 +23,6 @@ Thumbs.db
 !*.bashrc
 !*.bash_profile
 !*.bash_prompt
+!*.hyper.js
+!*.hyper_plugins
 !.gitignore
