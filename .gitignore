@@ -13,16 +13,5 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-# Ignore everything
-*
-
-# But not these files...
-
-!*.vimrc
-!*.vim
-!*.bashrc
-!*.bash_profile
-!*.bash_prompt
-!*.hyper.js
-!.gitignore
-!init.sh
+# history files
+.bash_history
