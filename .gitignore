@@ -25,3 +25,4 @@ Thumbs.db
 !*.bash_prompt
 !*.hyper.js
 !.gitignore
+!init.sh
