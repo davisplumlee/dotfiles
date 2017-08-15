@@ -44,7 +44,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    padding: '12px 14px 18px 14px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -66,6 +66,55 @@ module.exports = {
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
+    },
+
+    hyperline: {
+      color: 'lightBlack',
+      plugins: [
+        {
+          name: 'hostname',
+          options: {
+            color: 'white'
+          }
+        },
+        {
+          name: 'memory',
+          options: {
+            color: 'white'
+          }
+        },
+        {
+          name: 'uptime',
+          options: {
+            color: 'white'
+          }
+        },
+        {
+          name: 'cpu',
+          options: {
+            colors: {
+              high: 'lightRed',
+              moderate: 'lightYellow',
+              low: 'lightGreen'
+            }
+          }
+        },
+        {
+          name: 'network',
+          options: {
+            color: 'white'
+          }
+        },
+        {
+          name: 'battery',
+          options: {
+            colors: {
+              fine: 'white',
+              critical: 'lightRed'
+            }
+          }
+        }
+      ]
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -104,12 +153,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    'hyper-solarized-dark',
-    "hyper-statusline",
-    "hyper-tabs-enhanced",
-    "hyper-simple-vibrancy"
-  ],
+  plugins: ['hyper-ayu', "hyperline", "hyper-tabs-enhanced"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
